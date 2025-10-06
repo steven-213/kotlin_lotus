@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CrudEmpleado</string>
+
+    <string-array name="tipos_identificacion">
+        <item>Cédula de ciudadanía</item>
+        <item>Cédula de extranjería</item>
+        <item>Tarjeta de identidad</item>
+        <item>Pasaporte</item>
+        <item>Otro</item>
+    </string-array>
+
+</resources>

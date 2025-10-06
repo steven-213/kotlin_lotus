@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#FFFFFF"
+    android:elevation="4dp"
+    android:layout_marginBottom="8dp"
+    android:clipToPadding="false">
+
+    <!-- Nombre del usuario -->
+    <TextView
+        android:id="@+id/tvNombreUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del usuario"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:paddingBottom="4dp"/>
+
+    <!-- Detalles del usuario -->
+    <TextView
+        android:id="@+id/tvDetallesUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detalles del usuario"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:paddingBottom="8dp"/>
+
+    <!-- Botones de acción -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Editar -->
+        <ImageButton
+            android:id="@+id/btnEditarUsuario"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_edit"
+            android:contentDescription="Editar"
+            android:backgroundTint="#FF4081"
+            android:tint="#FFFFFF"/>
+
+        <!-- Eliminar -->
+        <ImageButton
+            android:id="@+id/btnEliminarUsuario"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_delete"
+            android:contentDescription="Eliminar"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#FF4081"
+            android:tint="#FFFFFF"/>
+
+        <!-- Comprar productos -->
+        <Button
+            android:id="@+id/btnComprar"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Comprar productos"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF4081"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>

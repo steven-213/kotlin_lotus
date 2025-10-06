@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFF0F5">
+
+    <!-- Usuario que compra -->
+    <TextView
+        android:id="@+id/tvUsuarioCompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comprando como: Usuario"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#D81B60"
+        android:paddingBottom="12dp" />
+
+    <!-- Lista de productos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProductos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp" />
+
+    <!-- Resumen de compra -->
+    <LinearLayout
+        android:id="@+id/layoutResumenCompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:elevation="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:clipToPadding="false"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+
+        <TextView
+            android:id="@+id/tvSubtotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subtotal: $0.0"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvIvaTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IVA: $0.0"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvTotalFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: $0.0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#D81B60"
+            android:paddingBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnComprarTodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comprar Todo"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF4081"
+            android:padding="14dp"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+</LinearLayout>
